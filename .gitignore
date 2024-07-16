@@ -21,7 +21,6 @@ next-env.d.ts
 
 # Misc
 .DS_Store
-git public/NickFraserResume.pdf
 
 # vercel
 .vercel
