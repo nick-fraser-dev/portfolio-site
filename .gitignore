@@ -1,0 +1,27 @@
+# dotenv environment variable files
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next
+out
+
+# TypeScript cache
+*.tsbuildinfo
+next-env.d.ts
+
+# Production
+/build
+
+# Misc
+.DS_Store
+git public/NickFraserResume.pdf
+
+# vercel
+.vercel
