@@ -15,7 +15,7 @@ const projects = [
         projectImage: "/portfolio-site.png",
         projectDescription: "You're lookin' at it. A minimalist portfolio built with Next.js and Framer Motion.",
         projectTools: ["TypeScript", "Next.js", "Tailwind", "Framer Motion", "Vercel"],
-        projectGithub: "https://github.com/nick-fraser-dev",
+        projectGithub: "https://github.com/nick-fraser-dev/portfolio-site",
         projectLink: "#home"
     },
     {

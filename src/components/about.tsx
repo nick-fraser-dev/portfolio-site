@@ -32,7 +32,7 @@ export default function About() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.75 }}
       >
-        <span className='italic'>When im not coding</span>{" "}
+        <span className='italic'>When I'm not coding</span>{" "}
         I enjoy writing music, practicing piano and guitar, spinning vinyl,
         cooking with my wife, getting outside, and playing with our cats.
       </motion.p>
