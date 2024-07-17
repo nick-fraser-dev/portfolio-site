@@ -27,7 +27,7 @@ const projects = [
         projectLink: "https://github.com/nick-fraser-dev"
     },
     {
-        projectName: ".Net Project",
+        projectName: "Coming Soon",
         projectImage: "coming soon",
         projectDescription: "This project is coming soon",
         projectTools: ["C#", ".NET", "React", "Azure", "Docker"],
@@ -35,7 +35,7 @@ const projects = [
         projectLink: "#home"
     },
     {
-        projectName: "Mystery Project",
+        projectName: "Coming Soon",
         projectImage: "coming soon",
         projectDescription: "This project is coming soon",
         projectTools: ["Python", "JavaScript", "HTML", "CSS"],
