@@ -36,12 +36,11 @@ export const navItems = [
 ] as const;
 export default function NavBar() {
     const {activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-    // const {ref} = useSectionInView("Home");
+    
     const pathname = usePathname();
-    console.log(`pathname: ${pathname}`);
+    
 
     function handleNavClick(newActiveSectionName : SectionName){
-        console.log(`navbar.handleNavClick newActiveSectionName: ${newActiveSectionName}`)
         setActiveSection(newActiveSectionName);
         setTimeOfLastClick(Date.now());
     }
