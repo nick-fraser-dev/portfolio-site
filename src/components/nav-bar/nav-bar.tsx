@@ -1,12 +1,10 @@
 "use client";
-import Link from "next/link";
-import notebookIcon from "../public/notebook.png";
-import Image from "next/image";
+
 import { motion } from "framer-motion";
 import NavItem from "./nav-item";
 import {useActiveSectionContext } from "@/context/active-section-context";
-import { useSectionInView } from "@/lib/hooks";
 import {SectionName} from "@/lib/types";
+import { usePathname, useRouter } from "next/navigation";
 
 
 
@@ -39,13 +37,20 @@ export const navItems = [
 export default function NavBar() {
     const {activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
     // const {ref} = useSectionInView("Home");
-    
+    const pathname = usePathname();
+    console.log(`pathname: ${pathname}`);
 
     function handleNavClick(newActiveSectionName : SectionName){
         console.log(`navbar.handleNavClick newActiveSectionName: ${newActiveSectionName}`)
         setActiveSection(newActiveSectionName);
         setTimeOfLastClick(Date.now());
     }
+    const validPaths = ["/", "/#home", "/#skills", "/#about", "/#projects"]
+    if(! validPaths.includes(pathname)){
+        return(
+            <></>
+        )
+    };
     return (
         <>
             <header className="z-[999] relative" >
