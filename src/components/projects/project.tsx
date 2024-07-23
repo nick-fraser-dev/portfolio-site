@@ -9,11 +9,9 @@ import { FaGithubSquare } from 'react-icons/fa';
 const animationVariants = {
     initial: {
         opacity: 0,
-        y: 100,
     },
     animate: (index: number) => ({
         opacity: 1,
-        y: 0,
         transition: {
             delay: 0.1,
             duration: 0.5
@@ -42,10 +40,10 @@ export default function Project({ index, projectName, projectImage, projectDescr
             viewport={{ once: true }}
             custom={index}
         >
-            <div className="font-medium">
+            <div className="font-medium tracking-widest">
                 <p>{projectName}</p>
             </div>
-            <div className="flex flex-col sm:w-full sm:h-3/4 items-center justify-center text-center border rounded-xl">
+            <div className="flex flex-col sm:w-full sm:h-3/4 items-center justify-center text-center ">
                 {projectImage == "coming soon" ?
 
                     <h1 className="text-3xl font-light tracking-widest flex-wrap sm:h-48" >

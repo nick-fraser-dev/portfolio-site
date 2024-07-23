@@ -6,7 +6,7 @@ import { ActiveSectionContext, useActiveSectionContext } from '@/context/active-
 import { useSectionInView } from '@/lib/hooks';
 
 export default function About() {
-  const {ref} = useSectionInView("About");
+  const {ref} = useSectionInView("About", 0.9);
   
   //this should be updated with the WhileInView FramerMotion functionality from skills/skill.tsx
   return (
@@ -18,7 +18,9 @@ export default function About() {
       <motion.p className="mb-3"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.75 }}
+        transition={{ duration: 1}}
+        whileInView="animate"
+        viewport={{ once: true }}
         
       >
         I am a <span className="font-medium">software developer</span> based in <span className="italic">Burlington, Vermont.</span> I am a lifelong learner of
@@ -30,7 +32,9 @@ export default function About() {
       <motion.p className="mb-3 "
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.75 }}
+        transition={{ duration: 1}}
+        whileInView="animate"
+        viewport={{ once: true }}
       >
         <span className='italic'>When I'm not coding</span>{" "}
         I enjoy writing music, practicing piano and guitar, spinning vinyl,
