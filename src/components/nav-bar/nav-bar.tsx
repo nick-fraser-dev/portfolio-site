@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import NavItem from "./nav-item";
-import {useActiveSectionContext } from "@/context/active-section-context";
-import {SectionName} from "@/lib/types";
+import { useActiveSectionContext } from "@/context/active-section-context";
+import { SectionName } from "@/lib/types";
 import { usePathname, useRouter } from "next/navigation";
 
 
@@ -24,29 +24,21 @@ export const navItems = [
     {
         name: "Projects",
         ref: "#projects"
-    },
-    // {
-    //     name: "Resume",
-    //     ref: "#links"
-    // },
-    // {
-    //     name: "Contact",
-    //     ref: "#links"
-    // }
+    }
 ] as const;
 export default function NavBar() {
-    const {activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-    
-    const pathname = usePathname();
-    
+    const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
-    function handleNavClick(newActiveSectionName : SectionName){
+    const pathname = usePathname();
+
+
+    function handleNavClick(newActiveSectionName: SectionName) {
         setActiveSection(newActiveSectionName);
         setTimeOfLastClick(Date.now());
     }
     const validPaths = ["/", "/#home", "/#skills", "/#about", "/#projects"]
-    if(! validPaths.includes(pathname)){
-        return(
+    if (!validPaths.includes(pathname)) {
+        return (
             <></>
         )
     };
@@ -68,7 +60,7 @@ export default function NavBar() {
 
                     <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
                         {navItems.map((navItem, id) => (
-                            <NavItem navItem={navItem} key={id} isActive={activeSection == navItem.name} handleNavClick={handleNavClick}/>
+                            <NavItem navItem={navItem} key={id} isActive={activeSection == navItem.name} handleNavClick={handleNavClick} />
                         ))}
                     </ul>
                 </nav>
