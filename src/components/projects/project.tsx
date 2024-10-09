@@ -1,10 +1,8 @@
 import { toolIcons } from '@/lib/types';
-import { Paper, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { BsGithub, BsLink } from 'react-icons/bs';
+import { BsLink } from 'react-icons/bs';
 import { FaGithubSquare } from 'react-icons/fa';
-
 
 const animationVariants = {
     initial: {
@@ -51,7 +49,7 @@ export default function Project({ index, projectName, projectImage, projectDescr
                     </h1>
 
                     :
-                    <Image src={`${projectImage}`} alt="project-picture" width="800" height="800" className="w-auto h-auto rounded-xl" />}
+                    <Image src={`${projectImage}`} alt="project-picture" width="800" height="800" className="w-auto h-auto rounded-xl" priority/>}
             </div>
 
             <div>
@@ -59,18 +57,23 @@ export default function Project({ index, projectName, projectImage, projectDescr
             </div>
             <div className="flex flex-row w-full rounded-xl pl-2 sm:pl-2">
                 <div className="flex flex-row justify-around w-1/4 font-extralight">
-                    <a 
+                    <a
                         href={projectGithub}
                         target="_blank"
                         className="flex flex-col items-center text-center justify-center">
                         <FaGithubSquare size={22} />
                     </a>
-                    <a 
-                        href={projectLink}
-                        target={projectLink == "#home" ? "" : "_blank"}
-                        className="flex flex-col items-center text-center justify-center">
-                        <BsLink size={22}/>
-                    </a>
+                    {projectName == "RecipeRepo" ?
+                        <p className="flex flex-col items-center text-center justify-center sm:text-sm text-xs">
+                            Demo Coming Soon!
+                        </p> :
+                        <a
+                            href={projectLink}
+                            target={projectLink == "#home" ? "" : "_blank"}
+                            className="flex flex-col items-center text-center justify-center">
+                            <BsLink size={22} />
+                        </a>
+                    }
                 </div>
                 <div className="flex flex-row items-center text-center align-middle justify-around gap-4 border border-gray-200 w-1/2 h-1/12 p-2 rounded-xl">
                     {projectTools.map((tool, index) =>

@@ -11,8 +11,8 @@ export default function IntroAbout() {
       <span className="font-bold">Hi, I'm Nick. </span>
       <span>I'm a  </span>
       <span className="font-bold">full-stack developer </span>
-      <span>with over </span>
-      <span className="font-bold">7 years </span>
+      <span>with </span>
+      <span className="font-bold">8 years </span>
       <span>of experience. </span>
       <span>I like to build </span>
       <span className='italic'>apps and sites </span>

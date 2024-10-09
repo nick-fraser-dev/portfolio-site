@@ -45,10 +45,12 @@ const animationVariants = {
         }
     })
 }
+
 interface Props {
     skill: string,
     index: number,
 }
+
 export default function Skill({skill, index} : Props){
     return (
         <>

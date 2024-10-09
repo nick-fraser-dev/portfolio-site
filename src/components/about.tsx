@@ -1,14 +1,9 @@
-import React, { useEffect } from 'react'
 import SectionHeading from './section-heading'
 import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
-import { ActiveSectionContext, useActiveSectionContext } from '@/context/active-section-context';
 import { useSectionInView } from '@/lib/hooks';
 
 export default function About() {
-  const {ref} = useSectionInView("About", 0.9);
-  
-  //this should be updated with the WhileInView FramerMotion functionality from skills/skill.tsx
+  const { ref } = useSectionInView("About", 0.9);
   return (
     <section
       ref={ref}
@@ -18,10 +13,10 @@ export default function About() {
       <motion.p className="mb-3"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1}}
+        transition={{ duration: 1 }}
         whileInView="animate"
         viewport={{ once: true }}
-        
+
       >
         I am a <span className="font-medium">software developer</span> based in <span className="italic">Burlington, Vermont.</span> I am a lifelong learner of
         <span className="font-medium"> software engineering</span> and <span className="font-medium">music</span>.
@@ -32,7 +27,7 @@ export default function About() {
       <motion.p className="mb-3 "
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1}}
+        transition={{ duration: 1 }}
         whileInView="animate"
         viewport={{ once: true }}
       >

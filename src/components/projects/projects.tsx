@@ -1,25 +1,19 @@
 "use client";
-import { Box, Typography } from "@mui/material";
-import Paper from "@mui/material/Paper";
 import Project from "./project";
-import Grid from "@mui/material/Grid";
-import Slide from '@mui/material/Slide';
-import Carousel from 'react-material-ui-carousel';
 import SectionHeading from "../section-heading";
 import { useSectionInView } from "@/lib/hooks";
-
 
 const projects = [
     {
         projectName: "Portfolio Site",
         projectImage: "/portfolio-site.png",
-        projectDescription: "You're lookin' at it. A minimalist portfolio built with Next.js and Framer Motion.",
+        projectDescription: "A minimalist portfolio built with Next.js and Framer Motion.",
         projectTools: ["TypeScript", "Next.js", "Tailwind", "Framer Motion", "Vercel"],
         projectGithub: "https://github.com/nick-fraser-dev/portfolio-site",
         projectLink: "#home"
     },
     {
-        projectName: "Recipe Repo",
+        projectName: "RecipeRepo",
         projectImage: "/recipe-repo.png",
         projectDescription: "A recipe repository built with Next.js, PostgreSQL, and TailwindCSS.",
         projectTools: ["TypeScript", "Next.js", "PostgreSQL", "Tailwind"],
@@ -43,8 +37,6 @@ const projects = [
         projectLink: "#home"
     }
 ]
-
-
 
 export default function Projects() {
     const { ref } = useSectionInView("Projects", 0.2);
