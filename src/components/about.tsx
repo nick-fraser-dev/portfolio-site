@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section
       ref={ref}
-      className="text-2xl mb-20 max-w-[38rem] text-center scroll-mt-28" id="about">
+      className="text-xl mb-20 max-w-[38rem] text-center scroll-mt-28" id="about">
       <SectionHeading>ABOUT ME</SectionHeading>
 
       <motion.p className="mb-3"
@@ -20,8 +20,10 @@ export default function About() {
       >
         I am a <span className="font-medium">software developer</span> based in <span className="italic">Burlington, Vermont.</span> I am a lifelong learner of
         <span className="font-medium"> software engineering</span> and <span className="font-medium">music</span>.
-        I am a passionate problem solver who loves selecting the right tools and finding the right solution for the job.
-        I love React front ends, .NET and Node back ends, Nextjs full-stack apps, as well as SwiftUI and React Native mobile stacks.
+        I was first introduced to programming in college while I was studying music technology and I was hooked.  
+        My core areas of expertise are <span className="font-medium">C#</span> and the <span className="font-medium">.NET</span> ecosystem, <span className="font-medium">TypeScript</span> and the <span className="font-medium">React/Node</span> ecosystem, <span className="font-medium">SQL</span> and <span className="font-medium">NoSQL databases</span>, and <span className="font-medium">Python</span>.
+        I also have experience with mobile development stacks like <span className="font-medium">React Native</span>, and <span className="font-medium">Swift/SwiftUI</span>.
+        I love turning ideas into easy to use and elegant tools that solve actual problems for actual people.
       </motion.p>
 
       <motion.p className="mb-3 "
@@ -32,8 +34,8 @@ export default function About() {
         viewport={{ once: true }}
       >
         <span className='italic'>When I'm not coding</span>{" "}
-        I enjoy writing music, practicing piano and guitar, spinning vinyl,
-        cooking with my wife, getting outside, and playing with our cats.
+        I enjoy writing music, getting outside,
+        cooking with my wife, and playing with our cats.
       </motion.p>
     </section>
 

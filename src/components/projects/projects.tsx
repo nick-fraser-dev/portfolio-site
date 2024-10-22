@@ -15,8 +15,8 @@ const projects = [
     {
         projectName: "RecipeRepo",
         projectImage: "/recipe-repo.png",
-        projectDescription: "A recipe repository built with Next.js, PostgreSQL, and TailwindCSS.",
-        projectTools: ["TypeScript", "Next.js", "PostgreSQL", "Tailwind"],
+        projectDescription: "A recipe repository built with React, PostgreSQL, and TailwindCSS.",
+        projectTools: ["TypeScript", "React", "Next.js", "PostgreSQL", "Tailwind"],
         projectGithub: "https://github.com/nick-fraser-dev",
         projectLink: "https://github.com/nick-fraser-dev"
     },

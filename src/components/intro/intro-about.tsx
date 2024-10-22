@@ -13,7 +13,7 @@ export default function IntroAbout() {
       <span className="font-bold">full-stack developer </span>
       <span>with </span>
       <span className="font-bold">8 years </span>
-      <span>of experience. </span>
+      <span>of professional experience. </span>
       <span>I like to build </span>
       <span className='italic'>apps and sites </span>
       <span>for </span>

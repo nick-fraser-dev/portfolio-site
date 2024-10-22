@@ -41,7 +41,7 @@ export default function Project({ index, projectName, projectImage, projectDescr
             <div className="font-medium tracking-widest">
                 <p>{projectName}</p>
             </div>
-            <div className="flex flex-col sm:w-full sm:h-3/4 items-center justify-center text-center ">
+            <div className="flex flex-col sm:w-full sm:h-3/4 items-center justify-center text-center border-black">
                 {projectImage == "coming soon" ?
 
                     <h1 className="text-3xl font-light tracking-widest flex-wrap sm:h-48" >
@@ -49,7 +49,10 @@ export default function Project({ index, projectName, projectImage, projectDescr
                     </h1>
 
                     :
-                    <Image src={`${projectImage}`} alt="project-picture" width="800" height="800" className="w-auto h-auto rounded-xl" priority/>}
+                    <a href={`${projectLink}`}>
+                    <Image src={`${projectImage}`} alt="project-picture" width="1000" height="1000" className=" rounded-xl hover:scale-105 transition" priority/>
+                    </a>
+                    }
             </div>
 
             <div>
@@ -61,7 +64,7 @@ export default function Project({ index, projectName, projectImage, projectDescr
                         href={projectGithub}
                         target="_blank"
                         className="flex flex-col items-center text-center justify-center">
-                        <FaGithubSquare size={22} />
+                        <FaGithubSquare size={22} className="hover:scale-125 transition"/>
                     </a>
                     {projectName == "RecipeRepo" ?
                         <p className="flex flex-col items-center text-center justify-center sm:text-sm text-xs">
@@ -71,7 +74,7 @@ export default function Project({ index, projectName, projectImage, projectDescr
                             href={projectLink}
                             target={projectLink == "#home" ? "" : "_blank"}
                             className="flex flex-col items-center text-center justify-center">
-                            <BsLink size={22} />
+                            <BsLink size={22} className="hover:scale-125 transition"/>
                         </a>
                     }
                 </div>
