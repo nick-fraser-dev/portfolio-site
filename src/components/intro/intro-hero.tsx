@@ -14,7 +14,7 @@ export default function IntroHero() {
                 >
                     {/* <HiOutlineComputerDesktop className='h-42 bg-clip-content p-0 m-2 border-spacing-0 bg-slate-50 bg-round rounded-3xl shadow-xl' size={200} /> */}
                     <div className="overflow-hidden rounded-3xl ring-indigo-400 ring-2">
-                    <Image src={"/nfli.jpeg"} height={200} width={200} alt={"nick-fraser"} className="rounded-3xl scale-125 translate-y-6 -translate-x-4 brightness-110"/>
+                    <Image src={"/nf_li.jpg"} height={200} width={200} alt={"nick-fraser"} className="rounded-3xl scale-125 translate-y-4 brightness-110 saturate-[.9]"/>
                     </div>
                     
                     <motion.span

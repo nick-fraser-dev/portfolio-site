@@ -21,7 +21,7 @@ export default function About() {
         I am a <span className="font-medium">software developer</span> based in <span className="italic">Burlington, Vermont.</span> I am a lifelong learner of
         <span className="font-medium"> software engineering</span> and <span className="font-medium">music</span>.
         I was first introduced to programming in college while I was studying music technology and I was hooked.  
-        My core areas of expertise are <span className="font-medium">C#</span> and the <span className="font-medium">.NET</span> ecosystem, <span className="font-medium">TypeScript</span> and the <span className="font-medium">React/Node</span> ecosystem, <span className="font-medium">SQL</span> and <span className="font-medium">NoSQL databases</span>, and <span className="font-medium">Python</span>.
+        My core areas of expertise are <span className="font-medium">C#</span> and the <span className="font-medium">.NET</span> ecosystem, <span className="font-medium">TypeScript</span> and the <span className="font-medium">React/Node</span> ecosystem, <span className="font-medium">SQL</span> and <span className="font-medium">NoSQL databases</span>, <span className="font-medium">Java</span>, and <span className="font-medium">Python</span>.
         I also have experience with mobile development stacks like <span className="font-medium">React Native</span>, and <span className="font-medium">Swift/SwiftUI</span>.
         I love turning ideas into easy to use and elegant tools that solve actual problems for actual people.
       </motion.p>
