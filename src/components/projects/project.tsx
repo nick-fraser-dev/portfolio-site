@@ -78,7 +78,7 @@ export default function Project({ index, projectName, projectImage, projectDescr
                         </a>
                     }
                 </div>
-                <div className="flex flex-row items-center text-center align-middle justify-around gap-4 border border-gray-200 w-1/2 h-1/12 p-2 rounded-xl">
+                <div className="flex flex-row items-center text-center overflow-y-scroll align-middle justify-around gap-4 border border-gray-200 w-1/2 h-1/12 p-2 rounded-xl">
                     {projectTools.map((tool, index) =>
                         <div className="" key={index}>
                             {toolIcons[tool]}
