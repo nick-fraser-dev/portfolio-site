@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { HiOutlineComputerDesktop } from "react-icons/hi2";
 
+
 export default function IntroHero() {
     return (
         <div className="flex items-center justify-center pb-10">
@@ -14,9 +15,13 @@ export default function IntroHero() {
                 >
                     {/* <HiOutlineComputerDesktop className='h-42 bg-clip-content p-0 m-2 border-spacing-0 bg-slate-50 bg-round rounded-3xl shadow-xl' size={200} /> */}
                     <div className="overflow-hidden rounded-3xl ring-indigo-400 ring-2">
-                    <Image src={"/nf_li.JPG"} height={200} width={200} alt={"nick-fraser"} className="rounded-3xl scale-125 w-auto h-auto translate-y-4 brightness-110 saturate-[.9]"/>
+                        <Image
+                            src={"/static/nf_li.jpg"} height={200} width={200} alt={"nick-fraser"}
+                            className="rounded-3xl scale-125 w-auto h-auto translate-y-4 brightness-110 saturate-[.9]"
+
+                        />
                     </div>
-                    
+
                     <motion.span
                         initial={{ opacity: 0, scale: 0 }}
                         animate={{ opacity: 1, scale: 1 }}
