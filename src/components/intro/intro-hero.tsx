@@ -17,8 +17,8 @@ export default function IntroHero() {
                     <div className="overflow-hidden rounded-3xl ring-indigo-400 ring-2">
                         <Image
                             src={"/static/nf_li.jpg"} height={200} width={200} alt={"nick-fraser"}
-                            className="rounded-3xl scale-125 w-auto h-auto translate-y-4 brightness-110 saturate-[.9]"
-
+                            className="relative rounded-3xl scale-125 translate-y-4 brightness-110 saturate-[.9]"
+                            
                         />
                     </div>
 
