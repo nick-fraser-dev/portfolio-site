@@ -10,6 +10,8 @@ const skills = [
     "PostgreSQL",
     "React",
     "Node.js",
+    "Java",
+    "Spring Boot",
     "Git",
     "Express",
     "Python",

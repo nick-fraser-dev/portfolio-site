@@ -22,7 +22,7 @@ export default function IntroLinks() {
             </Link>
             <Link
                 className="group bg-white flex items-center text-gray-700 px-7 py-3 gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:bg-neutral-200 hover:text-gray-950 active:scale-105 group transition cursor-pointer border border-black/10 scoll-mt-96"
-                href="/NickFraserResume.pdf"
+                href="/NickFraserResumePortfolio.pdf"
                 download
                 id="resume"
                 target="_blank">

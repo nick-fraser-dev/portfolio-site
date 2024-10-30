@@ -50,7 +50,7 @@ export default function Project({ index, projectName, projectImage, projectDescr
 
                     :
                     <a href={`${projectLink}`}>
-                    <Image src={`${projectImage}`} alt="project-picture" width="1000" height="1000" className=" rounded-xl hover:scale-105 transition" priority/>
+                    <Image src={`${projectImage}`} alt="project-picture" width="1000" height="1000" className="w-auto h-auto rounded-xl hover:scale-105 transition" priority/>
                     </a>
                     }
             </div>

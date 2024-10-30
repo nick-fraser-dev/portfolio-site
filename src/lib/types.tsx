@@ -1,6 +1,7 @@
 import {navItems} from "@/components/nav-bar/nav-bar";
 import { AiOutlineHtml5 } from "react-icons/ai";
-import { FaCss3Alt, FaGitAlt } from "react-icons/fa";
+import { BiLogoSpringBoot } from "react-icons/bi";
+import { FaCss3Alt, FaGitAlt, FaJava } from "react-icons/fa";
 
 import { SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiNodedotjs, SiCsharp, SiDotnet, SiTailwindcss, SiMongodb, SiRedux, SiGraphql, SiExpress, SiPostgresql, SiMicrosoftazure, SiDocker, SiPython, SiDjango, SiFramer, SiVercel } from "react-icons/si";
 
@@ -33,6 +34,8 @@ export const toolIcons: Record<string, any> =
     "Django": <SiDjango size={toolIconSize}/>,
     "Framer Motion": <SiFramer size={toolIconSize}/>,
     "Vercel": <SiVercel size={toolIconSize} />,
+    "Java": <FaJava size={toolIconSize} />,
+    "Spring Boot": <BiLogoSpringBoot size={toolIconSize} />
     
 }
 
@@ -59,4 +62,6 @@ export const skillIcons: Record<string, any> =
     "Python" : <SiPython size={skillIconSize}/>,
     "Django": <SiDjango size={skillIconSize}/>,
     "Framer Motion": <SiFramer size={skillIconSize}/>,
+    "Java": <FaJava size={skillIconSize} />,
+    "Spring Boot": <BiLogoSpringBoot size={skillIconSize} />
 }

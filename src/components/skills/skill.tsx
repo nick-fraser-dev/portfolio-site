@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { AiOutlineHtml5 } from "react-icons/ai";
-import { FaCss3Alt, FaGitAlt } from "react-icons/fa";
+import { BiLogoSpringBoot } from "react-icons/bi";
+import { FaCss3Alt, FaGitAlt, FaJava } from "react-icons/fa";
 import { SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiNodedotjs, SiCsharp, SiDotnet, SiTailwindcss, SiMongodb, SiRedux, SiGraphql, SiExpress, SiPostgresql, SiMicrosoftazure, SiDocker, SiPython, SiDjango, SiFramer } from "react-icons/si";
 
 const size = 48;
@@ -27,6 +28,8 @@ const skillIcons: Record<string, any> =
     "Python" : <SiPython size={size}/>,
     "Django": <SiDjango size={size}/>,
     "Framer Motion": <SiFramer size={size}/>,
+    "Java": <FaJava size={size} />,
+    "Spring Boot": <BiLogoSpringBoot size={size} />
 }
 
 const animationVariants = {

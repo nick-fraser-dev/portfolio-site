@@ -24,7 +24,7 @@ const projects = [
         projectName: "Coming Soon",
         projectImage: "coming soon",
         projectDescription: "This project is coming soon",
-        projectTools: ["C#", ".NET", "React", "Azure", "Docker"],
+        projectTools: ["C#", ".NET", "React", "TypeScript", "Azure", "Docker"],
         projectGithub: "https://github.com/nick-fraser-dev",
         projectLink: "#home"
     },
@@ -32,7 +32,7 @@ const projects = [
         projectName: "Coming Soon",
         projectImage: "coming soon",
         projectDescription: "This project is coming soon",
-        projectTools: ["Python", "JavaScript", "HTML", "CSS"],
+        projectTools: ["Java", "Spring Boot", "React", "TypeScript", "HTML", "CSS"],
         projectGithub: "https://github.com/nick-fraser-dev",
         projectLink: "#home"
     }
